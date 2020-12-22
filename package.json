@@ -1,0 +1,11 @@
+{
+  "name": "paarekhat",
+  "version": "1.0.0",
+  "description": "Paarekhat weblog",
+  "main": "/pages/home.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "Borzoo Moazami",
+  "license": "MIT"
+}
