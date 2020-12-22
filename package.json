@@ -4,7 +4,8 @@
   "description": "Paarekhat weblog",
   "main": "/pages/home.html",
   "scripts": {
-    "start": "live-server"
+    "start": "live-server",
+    "home_sass":"sass --watch style/home.scss style/home.css"
   },
   "author": "Borzoo Moazami",
   "license": "MIT"

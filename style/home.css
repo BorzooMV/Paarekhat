@@ -1,7 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@500&family=Quicksand&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  margin: 50px auto;
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 30% auto;
+  border-bottom: 23px solid #363636;
+  padding-bottom: 20px;
+}
+header .logo {
+  width: 100%;
+}
+header .logo img {
+  width: 100%;
+  height: auto;
+}
+header .logo p {
+  font-family: "Caveat", cursive;
+  text-align: center;
+  font-size: 1.4rem;
+}
+header nav {
+  display: flex;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-self: flex-end;
+  width: 70%;
+  justify-content: space-between;
+  margin-left: auto;
+}
+header nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+#latestPosts {
+  width: 90%;
+  display: flex;
+  margin: 30px auto;
+  justify-content: space-between;
+}
+
+.post {
+  width: 23.7%;
+}
+.post img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.post .postFoot {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.post .postFoot .postAuthor,
+.post .postFoot .postDate {
+  font-size: 0.7rem;
+}
+
+#bottomRow {
+  border-top: 10px solid #363636;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#bottomRow #memberPic {
+  width: 39.2%;
+}
+#bottomRow #memberPic img {
+  width: 100%;
+  height: auto;
+}
+#bottomRow #memberInfo {
+  margin: auto;
+  width: 39.2%;
+}
+#bottomRow #memberInfo h1 {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #363636;
+}
+#bottomRow #memberInfo p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+#bottomRow #newsLetterBox {
+  width: 18.6%;
+}
+#bottomRow #newsLetterBox img {
+  width: 100%;
+  height: auto;
+}
+#bottomRow #newsLetterBox form input[type=email] {
+  display: block;
+  width: 100%;
+  height: 37px;
+  margin: 5px auto;
+  padding: 2px 4px;
+  border: 2px solid #363636;
+}
+#bottomRow #newsLetterBox form input[type=submit] {
+  display: block;
+  width: 100%;
+  height: 37px;
+  border: none;
+  background-color: #363636;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.3rem;
+  letter-spacing: 0.4em;
+}
+
+footer {
+  height: 5.5%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #adadad;
+  padding: 1.2% 2.2%;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+footer span {
+  width: 30%;
+  align-self: center;
+}
+footer img {
+  height: 33px;
+  width: auto;
 }
 
 /*# sourceMappingURL=home.css.map */
