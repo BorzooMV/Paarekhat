@@ -8,6 +8,7 @@
 body {
   width: 80%;
   margin: 50px auto;
+  margin-bottom: 0px;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -27,7 +28,7 @@ header .logo img {
 header .logo p {
   font-family: "Caveat", cursive;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.7vw;
 }
 header nav {
   display: flex;
@@ -43,6 +44,7 @@ header nav ul {
 header nav ul a {
   text-decoration: none;
   color: black;
+  font-size: 1.4vw;
 }
 
 #latestPosts {
@@ -54,6 +56,7 @@ header nav ul a {
 
 .post {
   width: 23.7%;
+  font-size: 1vw;
 }
 .post img {
   width: 100%;
@@ -67,7 +70,7 @@ header nav ul a {
 }
 .post .postFoot .postAuthor,
 .post .postFoot .postDate {
-  font-size: 0.7rem;
+  font-size: 0.6em;
 }
 
 #bottomRow {
@@ -96,12 +99,12 @@ header nav ul a {
   font-family: "Bebas Neue", cursive;
   text-align: center;
   letter-spacing: 0.3em;
-  font-size: 1.8rem;
+  font-size: 2vw;
   border-bottom: 3px solid #363636;
 }
 #bottomRow #memberInfo p {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.6vw;
 }
 #bottomRow #newsLetterBox {
   width: 18.6%;
@@ -126,7 +129,7 @@ header nav ul a {
   background-color: #363636;
   color: white;
   font-family: "Bebas Neue", cursive;
-  font-size: 1.3rem;
+  font-size: 2vw;
   letter-spacing: 0.4em;
 }
 
@@ -142,10 +145,148 @@ footer {
 footer span {
   width: 30%;
   align-self: center;
+  font-size: 1.5vw;
 }
 footer img {
-  height: 33px;
-  width: auto;
+  width: 3vw;
+  height: 100%;
+}
+
+@media all and (max-width: 400px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+  }
+  header .logo {
+    display: flex;
+    flex-direction: column;
+  }
+  header .logo img {
+    width: 60vw;
+    align-self: center;
+  }
+  header .logo p {
+    font-size: 3.5vw;
+  }
+  header nav {
+    border-top: 2px solid #363636;
+    border-bottom: 2px solid #363636;
+    height: 5vh;
+    margin-top: 10px;
+  }
+  header nav ul {
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+  }
+  header nav ul a {
+    font-size: 4vw;
+  }
+
+  #latestPosts {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0px;
+  }
+  #latestPosts .post {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #363636;
+    width: 100%;
+    font-size: 4vw;
+  }
+  #latestPosts .post .postFoot {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #latestPosts .post .postFoot .postAuthor,
+#latestPosts .post .postFoot .postDate {
+    font-size: 0.6em;
+  }
+
+  #bottomRow {
+    border-top: none;
+    margin-top: -20px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #bottomRow #memberPic {
+    width: 100%;
+  }
+  #bottomRow #memberInfo {
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 3px solid #363636;
+    padding-bottom: 10px;
+  }
+  #bottomRow #memberInfo h1 {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-size: 5vw;
+    border-bottom: 3px solid #363636;
+  }
+  #bottomRow #memberInfo p {
+    text-align: center;
+    font-size: 4vw;
+    line-height: 2em;
+  }
+  #bottomRow #newsLetterBox {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #bottomRow #newsLetterBox img {
+    width: 100%;
+    height: auto;
+  }
+  #bottomRow #newsLetterBox form input[type=email] {
+    display: block;
+    width: 100%;
+    height: 37px;
+    margin: 5px auto;
+    padding: 2px 4px;
+    border: 2px solid #363636;
+  }
+  #bottomRow #newsLetterBox form input[type=submit] {
+    display: block;
+    width: 100%;
+    height: 37px;
+    border: none;
+    background-color: #363636;
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    font-size: 5vw;
+    letter-spacing: 0.4em;
+  }
+
+  footer {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #adadad;
+    padding: 1.2% 2.2%;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  footer span {
+    width: 30%;
+    align-self: center;
+    font-size: 1.5vw;
+  }
+  footer img {
+    height: 80%;
+    width: auto;
+    margin-top: 3px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

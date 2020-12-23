@@ -19,6 +19,7 @@ $footerGrey: #adadad;
 body {
   width: 80%;
   margin: 50px auto;
+  margin-bottom: 0px;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -36,7 +37,7 @@ header {
     p {
       font-family: "Caveat", cursive;
       text-align: center;
-      font-size: 1.4rem;
+      font-size: 1.7vw;
     }
   }
   nav {
@@ -52,6 +53,7 @@ header {
       a {
         text-decoration: none;
         color: black;
+        font-size: 1.4vw;
       }
     }
   }
@@ -66,6 +68,7 @@ header {
 
 .post {
   width: 23.7%;
+  font-size: 1vw;
   img {
     width: 100%;
     height: auto;
@@ -77,7 +80,7 @@ header {
     justify-content: space-between;
     .postAuthor,
     .postDate {
-      font-size: 0.7rem;
+      font-size: 0.6em;
     }
   }
 }
@@ -94,6 +97,7 @@ header {
     img {
       width: 100%;
       height: auto;
+      // min-width: 412px;
     }
   }
 
@@ -108,12 +112,12 @@ header {
       font-family: "Bebas Neue", cursive;
       text-align: center;
       letter-spacing: 0.3em;
-      font-size: 1.8rem;
+      font-size: 2vw;
       border-bottom: 3px solid $ourBlack;
     }
     p {
       text-align: center;
-      font-size: 1.4rem;
+      font-size: 1.6vw;
     }
   }
 
@@ -140,7 +144,7 @@ header {
         background-color: $ourBlack;
         color: white;
         font-family: "Bebas Neue", cursive;
-        font-size: 1.3rem;
+        font-size: 2vw;
         letter-spacing: 0.4em;
       }
     }
@@ -159,10 +163,159 @@ footer {
   span {
     width: 30%;
     align-self: center;
+    font-size: 1.5vw;
   }
 
   img {
-    height: 33px;
-    width: auto;
+    width: 3vw;
+    height: 100%;
+  }
+}
+
+// media quieries
+
+@media all and (max-width: 400px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+    .logo {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 60vw;
+        align-self: center;
+      }
+      p {
+        font-size: 3.5vw;
+      }
+    }
+
+    nav {
+      border-top: 2px solid $ourBlack;
+      border-bottom: 2px solid $ourBlack;
+      height: 5vh;
+      margin-top: 10px;
+      ul {
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+        a {
+          font-size: 4vw;
+        }
+      }
+    }
+  }
+
+  #latestPosts {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0px;
+    .post {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $ourBlack;
+      width: 100%;
+      font-size: 4vw;
+      .postFoot {
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        .postAuthor,
+        .postDate {
+          font-size: 0.6em;
+        }
+      }
+    }
+  }
+
+  #bottomRow {
+    border-top: none;
+    margin-top: -20px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    // background-color: saddlebrown;
+    justify-content: space-between;
+    width: 100%;
+
+    #memberPic {
+      width: 100%;
+    }
+
+    #memberInfo {
+      width: 100%;
+      margin-top: 20px;
+      border-bottom: 3px solid $ourBlack;
+      padding-bottom: 10px;
+      h1 {
+        width: 100%;
+        margin: auto;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        font-family: "Bebas Neue", cursive;
+        text-align: center;
+        letter-spacing: 0.3em;
+        font-size: 5vw;
+        border-bottom: 3px solid $ourBlack;
+      }
+      p {
+        text-align: center;
+        font-size: 4vw;
+        line-height: 2em;
+      }
+    }
+
+    #newsLetterBox {
+      width: 100%;
+      margin-top: 20px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      form {
+        input[type="email"] {
+          display: block;
+          width: 100%;
+          height: 37px;
+          margin: 5px auto;
+          padding: 2px 4px;
+          border: 2px solid $ourBlack;
+        }
+        input[type="submit"] {
+          display: block;
+          width: 100%;
+          height: 37px;
+          border: none;
+          background-color: $ourBlack;
+          color: white;
+          font-family: "Bebas Neue", cursive;
+          font-size: 5vw;
+          letter-spacing: 0.4em;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $footerGrey;
+    padding: 1.2% 2.2%;
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    span {
+      width: 30%;
+      align-self: center;
+      font-size: 1.5vw;
+    }
+
+    img {
+      height: 80%;
+      width: auto;
+      margin-top: 3px;
+    }
   }
 }
