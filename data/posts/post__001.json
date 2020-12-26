@@ -1,0 +1,10 @@
+[
+    {
+        "id":1,
+        "title":"First Post",
+        "author":"Borzoo Moazami",
+        "date":"26/22/2020",
+        "description":"Why I've started this Paarekhat and the people behind this weblog",
+        "body":"`The meta description is a snippet of up to about 155 characters – a tag in HTML – which summarizes a page’s content. Search engines show it in search results mostly when the searched-for phrase is within the description. So optimizing it is crucial for on-page SEO. In this post, I tell you the characteristics of a good meta description, and how Yoast SEO can help you with it.`"
+    }
+]

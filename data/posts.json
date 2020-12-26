@@ -1,0 +1,35 @@
+[
+    {
+        "id":1,
+        "title":"First Post",
+        "author":"Borzoo Moazami",
+        "date":"26/12/2020",
+        "description":"Why I've started this Paarekhat and the people behind this weblog",
+        "thumbnail": {
+            "src":"../media/images/1.jpg",
+            "alt":"Bunch of books on the ground"
+        }
+    },
+    {
+        "id":2,
+        "title":"Second Post",
+        "author":"Borzoo Moazami",
+        "date":"26/22/2020",
+        "description":"The meta description is a snippet of up to about 155 characters – a tag in HTML – which summarizes a page’s content. Search engines show it in search results mostly when the searched",
+        "thumbnail": {
+            "src":"../media/images/2.jpg",
+            "alt":"A picture on the wall"
+        }
+    },
+    {
+        "id":3,
+        "title":"Third Post",
+        "author":"Borzoo Moazami",
+        "date":"26/22/2020",
+        "description":"The meta description is a snippet of up to about 155 characters – a tag in HTML – which summarizes a page’s content. Search engines show it in search results mostly when the searched",
+        "thumbnail": {
+            "src":"../media/images/3.jpg",
+            "alt":"some clothes on a hanger sticked to a door"
+        }
+    }
+]

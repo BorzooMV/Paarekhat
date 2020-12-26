@@ -1,9 +1,11 @@
 // fonts
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@500&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 
 // font-family: 'Bebas Neue', cursive;
 // font-family: 'Caveat', cursive;
 // font-family: 'Quicksand', sans-serif;
+// font-family: 'Handlee', cursive;
 
 // variables
 $ourBlack: #363636;
@@ -35,9 +37,10 @@ header {
       height: auto;
     }
     p {
-      font-family: "Caveat", cursive;
+      font-family: "Handlee", cursive;
       text-align: center;
-      font-size: 1.7vw;
+      font-size: 1.3vw;
+      text-transform: capitalize;
     }
   }
   nav {
